@@ -168,12 +168,12 @@ const Home = () => {
               <div className="pt-10 pb-16">
                 <div className="px-4 sm:px-6 md:px-0">
                   <h1 className="text-3xl font-bold tracking-tight text-gray-900">
-                    Welcome Home {firstName}
+                    Hello Welcome Home {firstName}
                   </h1>
                 </div>
                 <div className="px-4 sm:px-6 md:px-0">
                   <div className="py-3">
-                    Jump back in where you left off, or start a new journey!
+                    Jump back in where you left off!
                   </div>
                 </div>
                 <div className="w-full bg-white flex flex-wrap rounded-md items-stretch justify-center mt-[80px]">
@@ -217,7 +217,7 @@ const Home = () => {
                     </div>
                     <div>
                       <h1 className="text-xl font-bold tracking-tight text-gray-900">
-                        Complete onboarding
+                        Complete your onboarding
                       </h1>
                       <ol className="list-decimal pl-[10px] py-[10px] text-[#A8ABB3]">
                         <li>Add messaging channels</li>
