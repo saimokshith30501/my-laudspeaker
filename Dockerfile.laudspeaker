@@ -1,1 +1,1 @@
-FROM saimokshith30501/my-laudspeaker
+FROM laudspeaker/laudspeaker:latest
