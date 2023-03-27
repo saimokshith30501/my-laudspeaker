@@ -22,10 +22,11 @@ export class MessageProcessor {
   private MAXIMUM_SMS_LENGTH = 1600;
   private tagEngine = new Liquid();
   private sgMailService = new MailService();
-  private phClient = new PostHog(
-    process.env.POSTHOG_KEY,
-    { host: process.env.POSTHOG_HOST } // You can omit this line if using PostHog Cloud
-  );
+  private phClient = {
+    capture: function (obj) {
+      console.log(obj);
+    },
+  };
 
   private clickhouseClient = createClient({
     host: process.env.CLICKHOUSE_HOST
