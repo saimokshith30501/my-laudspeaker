@@ -51,7 +51,7 @@ export default function SettingsPlanBeta() {
                 className={({ checked, active }) =>
                   classNames(
                     checked ? "border-transparent" : "border-gray-300",
-                    active ? "border-cyan-500 ring-2 ring-cyan-500" : "",
+                    active ? "border-amber-500 ring-2 ring-amber-500" : "",
                     "relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none"
                   )
                 }
@@ -83,14 +83,14 @@ export default function SettingsPlanBeta() {
                     <CheckCircleIcon
                       className={classNames(
                         !checked ? "invisible" : "",
-                        "h-5 w-5 text-cyan-600"
+                        "h-5 w-5 text-amber-600"
                       )}
                       aria-hidden="true"
                     />
                     <span
                       className={classNames(
                         active ? "border" : "border-2",
-                        checked ? "border-cyan-500" : "border-transparent",
+                        checked ? "border-amber-500" : "border-transparent",
                         "pointer-events-none absolute -inset-px rounded-lg"
                       )}
                       aria-hidden="true"
@@ -115,7 +115,7 @@ export default function SettingsPlanBeta() {
                   type="text"
                   name="card-number"
                   id="card-number"
-                  className="relative block w-full rounded-none rounded-t-md border-gray-300 bg-transparent focus:z-10 focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm"
+                  className="relative block w-full rounded-none rounded-t-md border-gray-300 bg-transparent focus:z-10 focus:border-amber-500 focus:ring-amber-500 sm:text-sm"
                   placeholder="Card number"
                 />
               </div>
@@ -128,7 +128,7 @@ export default function SettingsPlanBeta() {
                     type="text"
                     name="card-expiration-date"
                     id="card-expiration-date"
-                    className="relative block w-full rounded-none rounded-bl-md border-gray-300 bg-transparent focus:z-10 focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm"
+                    className="relative block w-full rounded-none rounded-bl-md border-gray-300 bg-transparent focus:z-10 focus:border-amber-500 focus:ring-amber-500 sm:text-sm"
                     placeholder="MM / YY"
                   />
                 </div>
@@ -140,7 +140,7 @@ export default function SettingsPlanBeta() {
                     type="text"
                     name="card-cvc"
                     id="card-cvc"
-                    className="relative block w-full rounded-none rounded-br-md border-gray-300 bg-transparent focus:z-10 focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm"
+                    className="relative block w-full rounded-none rounded-br-md border-gray-300 bg-transparent focus:z-10 focus:border-amber-500 focus:ring-amber-500 sm:text-sm"
                     placeholder="CVC"
                   />
                 </div>
@@ -160,7 +160,7 @@ export default function SettingsPlanBeta() {
                   id="country"
                   name="country"
                   autoComplete="country-name"
-                  className="relative block w-full rounded-none rounded-t-md border-gray-300 bg-transparent focus:z-10 focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm"
+                  className="relative block w-full rounded-none rounded-t-md border-gray-300 bg-transparent focus:z-10 focus:border-amber-500 focus:ring-amber-500 sm:text-sm"
                 >
                   <option>United States</option>
                   <option>Canada</option>
@@ -176,7 +176,7 @@ export default function SettingsPlanBeta() {
                   name="postal-code"
                   id="postal-code"
                   autoComplete="postal-code"
-                  className="relative block w-full rounded-none rounded-b-md border-gray-300 bg-transparent focus:z-10 focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm"
+                  className="relative block w-full rounded-none rounded-b-md border-gray-300 bg-transparent focus:z-10 focus:border-amber-500 focus:ring-amber-500 sm:text-sm"
                   placeholder="ZIP / Postal code"
                 />
               </div>

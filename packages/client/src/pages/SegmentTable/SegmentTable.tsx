@@ -148,7 +148,7 @@ const SegmentTable = () => {
             <div className="mt-6 flex space-x-3 md:mt-0 md:ml-4">
               <GenericButton
                 id="createTemplate"
-                customClasses="inline-flex items-center border border-transparent bg-cyan-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md focus:ring-cyan-500"
+                customClasses="inline-flex items-center border border-transparent bg-amber-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md focus:ring-amber-500"
                 onClick={() => setNameModalOpen(true)}
                 loading={isSaving || loading}
               >

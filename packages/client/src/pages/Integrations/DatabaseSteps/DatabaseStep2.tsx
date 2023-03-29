@@ -37,7 +37,7 @@ const DatabaseStep2: FC<DatabaseStepProps> = ({
               className={classNames(
                 errors.frequencyNumber.length > 0 && showErrors.frequencyNumber
                   ? "rounded-md sm:text-sm focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500 "
-                  : "rounded-md sm:text-sm focus:border-cyan-500 border-gray-300 shadow-sm focus:ring-cyan-500 "
+                  : "rounded-md sm:text-sm focus:border-amber-500 border-gray-300 shadow-sm focus:ring-amber-500 "
               )}
             />
             {errors.frequencyNumber.length > 0 && showErrors.frequencyNumber && (
@@ -92,7 +92,7 @@ const DatabaseStep2: FC<DatabaseStepProps> = ({
               errors.peopleIdentification.length > 0 &&
                 showErrors.peopleIdentification
                 ? "rounded-md sm:text-sm focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500 "
-                : "rounded-md sm:text-sm focus:border-cyan-500 border-gray-300 shadow-sm focus:ring-cyan-500 "
+                : "rounded-md sm:text-sm focus:border-amber-500 border-gray-300 shadow-sm focus:ring-amber-500 "
             )}
           />
           {errors.peopleIdentification.length > 0 &&

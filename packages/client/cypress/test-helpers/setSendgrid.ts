@@ -7,7 +7,7 @@ export default (
   apiKey: string = TESTS_SENDGRID_API_KEY,
   fromEmail: string = TESTS_SENDGRID_FROM_EMAIL
 ) => {
-  cy.get('[data-disclosure-link="Settings"] > .bg-cyan-700').click();
+  cy.get('[data-disclosure-link="Settings"] > .bg-amber-700').click();
   cy.get(".-mb-px > :nth-child(3)").click();
   cy.wait(1000);
   cy.contains("Sendgrid").click();

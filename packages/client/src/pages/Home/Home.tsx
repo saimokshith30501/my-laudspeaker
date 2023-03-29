@@ -106,7 +106,7 @@ const Home = () => {
                         htmlFor="dropzone-file"
                         className={`flex flex-col items-center justify-center w-full h-full border-2 ${
                           isCSVDragActive
-                            ? "border-cyan-300"
+                            ? "border-amber-300"
                             : "border-gray-300"
                         } border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600`}
                       >

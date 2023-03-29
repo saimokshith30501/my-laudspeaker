@@ -29,7 +29,7 @@ const Header = () => {
     <div className="sticky top-0 z-[120] flex h-16 flex-shrink-0 border-b border-gray-200 bg-white">
       <button
         type="button"
-        className="border-r border-gray-200 px-4 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500 lg:hidden"
+        className="border-r border-gray-200 px-4 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500 lg:hidden"
         onClick={() => dispatch(toggleNavbar(true))}
       >
         <span className="sr-only">Open sidebar</span>
@@ -63,14 +63,14 @@ const Header = () => {
         <div className="ml-4 flex items-center md:ml-6">
           <button
             type="button"
-            className="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
+            className="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
           >
             <span className="sr-only">View notifications</span>
             <BellIcon className="h-6 w-6" aria-hidden="true" />
           </button>
           <Menu as="div" className="relative ml-3 z-auto">
             <div>
-              <Menu.Button className="flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 lg:rounded-md lg:p-2 lg:hover:bg-gray-50">
+              <Menu.Button className="flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 lg:rounded-md lg:p-2 lg:hover:bg-gray-50">
                 <span className="ml-3 hidden text-sm font-medium text-gray-700 lg:block">
                   <span className="sr-only">Open user menu for </span>
                   {firstName}

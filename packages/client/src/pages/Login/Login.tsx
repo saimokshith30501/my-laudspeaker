@@ -83,7 +83,7 @@ const Login: FC<LoginProps> = ({ setShowWelcomeBanner }) => {
                     onChange={handleLoginFormChange}
                     value={loginForm.email}
                     required
-                    className="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-cyan-500 focus:outline-none focus:ring-cyan-500 sm:text-sm"
+                    className="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-amber-500 focus:outline-none focus:ring-amber-500 sm:text-sm"
                   />
                 </div>
               </div>
@@ -104,14 +104,14 @@ const Login: FC<LoginProps> = ({ setShowWelcomeBanner }) => {
                     onChange={handleLoginFormChange}
                     value={loginForm.password}
                     required
-                    className="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-cyan-500 focus:outline-none focus:ring-cyan-500 sm:text-sm"
+                    className="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-amber-500 focus:outline-none focus:ring-amber-500 sm:text-sm"
                   />
                 </div>
               </div>
               <div className="text-sm flex items-center justify-end">
                 <Link
                   to="/reset-password"
-                  className="font-medium text-cyan-600 hover:text-cyan-500"
+                  className="font-medium text-amber-600 hover:text-amber-500"
                 >
                   Forgot your password?
                 </Link>
@@ -120,7 +120,7 @@ const Login: FC<LoginProps> = ({ setShowWelcomeBanner }) => {
                 <button
                   id="loginIntoAccount"
                   type="submit"
-                  className="flex w-full justify-center rounded-md border border-transparent bg-cyan-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
+                  className="flex w-full justify-center rounded-md border border-transparent bg-amber-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
                   onClick={handleSubmit}
                 >
                   Sign in

@@ -166,9 +166,9 @@ export default function SettingsSMSBeta() {
                       option.inStock
                         ? "cursor-pointer focus:outline-none"
                         : "opacity-25 cursor-not-allowed",
-                      active ? "ring-2 ring-offset-2 ring-cyan-500" : "",
+                      active ? "ring-2 ring-offset-2 ring-amber-500" : "",
                       checked
-                        ? "bg-cyan-600 border-transparent text-white hover:bg-cyan-700"
+                        ? "bg-amber-600 border-transparent text-white hover:bg-amber-700"
                         : "bg-white border-gray-200 text-gray-900 hover:bg-gray-50",
                       "border rounded-md py-3 px-3 flex items-center justify-center text-sm font-medium sm:flex-1"
                     )
@@ -199,7 +199,7 @@ export default function SettingsSMSBeta() {
                       showErrors.smsAccountSid &&
                       smsErrors.smsAccountSid.length > 0
                         ? "focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500"
-                        : "border-gray-300 focus:border-cyan-500 focus:ring-cyan-500"
+                        : "border-gray-300 focus:border-amber-500 focus:ring-amber-500"
                     }`}
                     onBlur={handleBlur}
                   />
@@ -241,7 +241,7 @@ export default function SettingsSMSBeta() {
                       showErrors.smsAuthToken &&
                       smsErrors.smsAuthToken.length > 0
                         ? "focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500"
-                        : "border-gray-300 focus:border-cyan-500 focus:ring-cyan-500"
+                        : "border-gray-300 focus:border-amber-500 focus:ring-amber-500"
                     }`}
                     onBlur={handleBlur}
                   />
@@ -284,7 +284,7 @@ export default function SettingsSMSBeta() {
                     className={`mt-1 block w-full rounded-md py-2 pl-3 pr-10 text-base focus:outline-none sm:text-sm ${
                       smsErrors.smsFrom.length > 0 && showErrors.smsFrom
                         ? "focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500"
-                        : "border-gray-300 focus:border-cyan-500 focus:ring-cyan-500"
+                        : "border-gray-300 focus:border-amber-500 focus:ring-amber-500"
                     }`}
                     onBlur={handleBlur}
                   >

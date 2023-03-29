@@ -69,7 +69,7 @@ const Settings = () => {
                       <select
                         id="selected-tab"
                         name="selected-tab"
-                        className="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-cyan-500 focus:outline-none focus:ring-cyan-500 sm:text-sm"
+                        className="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-amber-500 focus:outline-none focus:ring-amber-500 sm:text-sm"
                         value={currentTab}
                         onChange={(e) =>
                           setCurrentTab(e.currentTarget.value as TabName)
@@ -90,7 +90,7 @@ const Settings = () => {
                               key={tab}
                               className={classNames(
                                 tab === currentTab
-                                  ? "border-cyan-500 text-cyan-600"
+                                  ? "border-amber-500 text-amber-600"
                                   : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700",
                                 "whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm cursor-pointer"
                               )}

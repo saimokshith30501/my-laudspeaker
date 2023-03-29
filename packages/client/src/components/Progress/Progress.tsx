@@ -4,7 +4,7 @@ import React from "react";
 
 const Progress = () => {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center !text-cyan-600 text-[20px]">
+    <div className="w-full h-full flex flex-col items-center justify-center !text-amber-600 text-[20px]">
       <CircularProgress color="primary" />
       <p style={{ textAlign: "center" }}>
         Loading

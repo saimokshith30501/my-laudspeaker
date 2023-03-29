@@ -4,7 +4,7 @@ import { AuthState } from "../../reducers/auth";
 import { useTypedSelector } from "../../hooks/useTypeSelector";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Dialog, Disclosure, Transition } from "@headlessui/react";
-import LaudspeakerIcon from "../../assets/images/icon_cyan_cyan.svg";
+import LaudspeakerIcon from "../../assets/images/icon_amber_amber.svg";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 import { useDispatch } from "react-redux";
 import { toggleNavbar } from "reducers/settings";
@@ -54,8 +54,8 @@ export default function ResponsiveDrawer() {
                       <div
                         className={classNames(
                           location.pathname.includes(item.link)
-                            ? "bg-cyan-800 text-white"
-                            : "bg-cyan-700 text-cyan-100 hover:bg-cyan-600 hover:text-white",
+                            ? "bg-amber-800 text-white"
+                            : "bg-amber-700 text-amber-100 hover:bg-amber-600 hover:text-white",
                           "group w-full flex items-center px-2 py-2 text-sm font-medium rounded-md"
                         )}
                         aria-hidden="true"
@@ -90,8 +90,8 @@ export default function ResponsiveDrawer() {
                       <Disclosure.Button
                         className={classNames(
                           location.pathname.includes(item.link)
-                            ? "bg-cyan-800 text-white"
-                            : "bg-cyan-700 text-cyan-100 hover:bg-cyan-600 hover:white",
+                            ? "bg-amber-800 text-white"
+                            : "bg-amber-700 text-amber-100 hover:bg-amber-600 hover:white",
                           "group w-full flex transition-all items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md outline-none"
                         )}
                       >
@@ -137,8 +137,8 @@ export default function ResponsiveDrawer() {
                                 key={subItem.text}
                                 className={`${classNames(
                                   location.pathname.includes(subItem.link) &&
-                                    "!bg-cyan-800 text-white"
-                                )} group bg-cyan-700 flex w-full transition-all whitespace-nowrap outline-none items-center rounded-md py-2 px-2 text-sm font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white`}
+                                    "!bg-amber-800 text-white"
+                                )} group bg-amber-700 flex w-full transition-all whitespace-nowrap outline-none items-center rounded-md py-2 px-2 text-sm font-medium text-amber-100 hover:bg-amber-600 hover:text-white`}
                                 data-disclosure-link={subItem.text}
                               >
                                 <div
@@ -194,7 +194,7 @@ export default function ResponsiveDrawer() {
                   leaveFrom="translate-x-0"
                   leaveTo="-translate-x-full"
                 >
-                  <Dialog.Panel className="relative flex w-full max-w-[260px] flex-1 flex-col bg-cyan-700 pt-5 pb-4">
+                  <Dialog.Panel className="relative flex w-full max-w-[260px] flex-1 flex-col bg-amber-700 pt-5 pb-4">
                     <Transition.Child
                       as={Fragment}
                       enter="ease-in-out duration-300"
@@ -237,7 +237,7 @@ export default function ResponsiveDrawer() {
           </Transition.Root>
 
           <div
-            className={`flex-grow flex-col bg-cyan-700 pt-5 pb-4 h-full transition-all duration-500 ease-in-out min-w-[225px] max-w-[300px] hidden lg:flex`}
+            className={`flex-grow flex-col bg-amber-700 pt-5 pb-4 h-full transition-all duration-500 ease-in-out min-w-[225px] max-w-[300px] hidden lg:flex`}
           >
             <div className="flex flex-shrink-0 items-center px-4">
               <img className="h-8" src={LaudspeakerIcon} alt="Laudspeaker" />
@@ -245,7 +245,7 @@ export default function ResponsiveDrawer() {
             {/* overflow-x-hidden */}
             <div className="mt-5 flex flex-grow flex-col overflow-x-hidden">
               <nav
-                className="flex-1 space-y-1 bg-cyan-700 px-2"
+                className="flex-1 space-y-1 bg-amber-700 px-2"
                 aria-label="Sidebar"
               >
                 {generalNav}

@@ -1136,7 +1136,7 @@ export default function TableTemplate<T extends TableDataItem>({
                 <span
                   className={`${
                     isSelected
-                      ? "bg-cyan-500 !bg-clip-text text-transparent"
+                      ? "bg-amber-500 !bg-clip-text text-transparent"
                       : ""
                   }  font-[Poppins] font-medium text-[14px] leading-[26px]`}
                 >
@@ -1145,7 +1145,7 @@ export default function TableTemplate<T extends TableDataItem>({
                 <div
                   className={`${
                     !isSelected && "opacity-0"
-                  } transition-all absolute top-[-1px] h-[2px] left-0 w-full bg-cyan-500`}
+                  } transition-all absolute top-[-1px] h-[2px] left-0 w-full bg-amber-500`}
                 />
               </div>
             );

@@ -946,7 +946,7 @@ export default function OnboardingBeta() {
                     <GenericButton
                       id="saveEmailConfiguration"
                       onClick={handleSubmit}
-                      customClasses="inline-flex justify-center rounded-md border border-transparent bg-cyan-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
+                      customClasses="inline-flex justify-center rounded-md border border-transparent bg-amber-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
                       disabled={isError || isLoading}
                     >
                       Save
@@ -999,10 +999,10 @@ export default function OnboardingBeta() {
                                       ? "cursor-pointer focus:outline-none"
                                       : "opacity-25 cursor-not-allowed",
                                     active
-                                      ? "ring-2 ring-offset-2 ring-cyan-500"
+                                      ? "ring-2 ring-offset-2 ring-amber-500"
                                       : "",
                                     checked
-                                      ? "bg-cyan-600 border-transparent text-white hover:bg-cyan-700"
+                                      ? "bg-amber-600 border-transparent text-white hover:bg-amber-700"
                                       : "bg-white border-gray-200 text-gray-900 hover:bg-gray-50",
                                     "border rounded-md py-3 px-3 flex items-center justify-center text-sm font-medium sm:flex-1"
                                   )
@@ -1035,7 +1035,7 @@ export default function OnboardingBeta() {
                                     showErrors.smsAccountSid &&
                                     smsErrors.smsAccountSid.length > 0
                                       ? "focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500"
-                                      : "border-gray-300 focus:border-cyan-500 focus:ring-cyan-500"
+                                      : "border-gray-300 focus:border-amber-500 focus:ring-amber-500"
                                   }`}
                                   onBlur={handleSMSBlur}
                                 />
@@ -1077,7 +1077,7 @@ export default function OnboardingBeta() {
                                     showErrors.smsAuthToken &&
                                     smsErrors.smsAuthToken.length > 0
                                       ? "focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500"
-                                      : "border-gray-300 focus:border-cyan-500 focus:ring-cyan-500"
+                                      : "border-gray-300 focus:border-amber-500 focus:ring-amber-500"
                                   }`}
                                   onBlur={handleSMSBlur}
                                 />
@@ -1123,7 +1123,7 @@ export default function OnboardingBeta() {
                                     smsErrors.smsFrom.length > 0 &&
                                     showErrors.smsFrom
                                       ? "focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500"
-                                      : "border-gray-300 focus:border-cyan-500 focus:ring-cyan-500"
+                                      : "border-gray-300 focus:border-amber-500 focus:ring-amber-500"
                                   }`}
                                   onBlur={handleSMSBlur}
                                 >
@@ -1164,7 +1164,7 @@ export default function OnboardingBeta() {
                     <GenericButton
                       id="saveEmailConfiguration"
                       onClick={handleSubmit}
-                      customClasses="inline-flex justify-center rounded-md border border-transparent bg-cyan-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
+                      customClasses="inline-flex justify-center rounded-md border border-transparent bg-amber-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
                       disabled={isSMSError || isLoading}
                     >
                       Save
@@ -1280,7 +1280,7 @@ export default function OnboardingBeta() {
                   type="button"
                   onClick={handleSubmit}
                   disabled={isLoading}
-                  className="inline-flex justify-center rounded-md border border-transparent bg-cyan-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
+                  className="inline-flex justify-center rounded-md border border-transparent bg-amber-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
                 >
                   Save
                 </button>
@@ -1311,7 +1311,7 @@ export default function OnboardingBeta() {
                   type="button"
                   onClick={handleSubmit}
                   disabled={isLoading}
-                  className="inline-flex justify-center rounded-md border border-transparent bg-cyan-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
+                  className="inline-flex justify-center rounded-md border border-transparent bg-amber-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
                 >
                   Save
                 </button>
@@ -1391,7 +1391,7 @@ export default function OnboardingBeta() {
                     })
                   }
                   disabled={isError || isLoading}
-                  className="inline-flex justify-center rounded-md border border-transparent bg-cyan-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
+                  className="inline-flex justify-center rounded-md border border-transparent bg-amber-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
                 >
                   Sync
                 </button>
@@ -1514,7 +1514,7 @@ export default function OnboardingBeta() {
             <div className="grid place-items-center pt-6">
               <button
                 type="button"
-                className="inline-flex items-center rounded-md border border-transparent bg-cyan-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+                className="inline-flex items-center rounded-md border border-transparent bg-amber-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500"
                 onClick={redirectUses}
               >
                 Check Out Onboarding Video
@@ -1543,7 +1543,7 @@ export default function OnboardingBeta() {
                 <select
                   id="selected-tab"
                   name="selected-tab"
-                  className="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-cyan-500 focus:outline-none focus:ring-cyan-500 sm:text-sm"
+                  className="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-amber-500 focus:outline-none focus:ring-amber-500 sm:text-sm"
                   value={currentStep}
                   onChange={(e) => {
                     setCurrentStep(+e.currentTarget.value);
@@ -1564,7 +1564,7 @@ export default function OnboardingBeta() {
                         key={tab}
                         className={classNames(
                           tab === currentStep
-                            ? "border-cyan-500 text-cyan-600"
+                            ? "border-amber-500 text-amber-600"
                             : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700",
                           "whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm cursor-pointer"
                         )}

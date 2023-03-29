@@ -217,7 +217,7 @@ const TextUpdaterNode = ({ data }: { data: NodeData }) => {
         }}
       >
         {isNearToCursor && connectionNodeId !== nodeId && (
-          <div className="absolute w-[55%] h-[65%] rounded-md z-[-1] animate-ping border-[2px] border-cyan-600 left-[22.5%] top-[20%]" />
+          <div className="absolute w-[55%] h-[65%] rounded-md z-[-1] animate-ping border-[2px] border-amber-600 left-[22.5%] top-[20%]" />
         )}
         <Handle
           type="target"
@@ -229,7 +229,7 @@ const TextUpdaterNode = ({ data }: { data: NodeData }) => {
           <div
             className={`!w-[15px] !h-[15px] ${
               edges.find((edge) => edge.target === nodeId)
-                ? "!bg-cyan-400"
+                ? "!bg-amber-400"
                 : "!bg-transparent !border-0"
             } rounded-full absolute left-1/2 top-0 -translate-x-1/2`}
           ></div>
@@ -239,7 +239,7 @@ const TextUpdaterNode = ({ data }: { data: NodeData }) => {
             descriptionCollaped ? "max-h-[88px]" : "min-h-[80px]"
           }  flex justify-between rounded-[8px] p-[16.5px_20px] border-[2px] shadow-md border-transparent ${
             nodeData.width ? `w-[${nodeData.width}]` : "w-[350px]"
-          } ${isSelected ? "border-cyan-500 !shadow-xl" : ""}`}
+          } ${isSelected ? "border-amber-500 !shadow-xl" : ""}`}
         >
           <div className="max-w-full">
             <p className={textStyle}>
@@ -333,7 +333,7 @@ const TextUpdaterNode = ({ data }: { data: NodeData }) => {
                       <div className="absolute z-[-1] left-1/2 top-[24px] -translate-x-1/2 w-[20px] h-full">
                         <ArrowDown className="text-[#bdbdc1]" />
                         <div className="circle-to-display-hover absolute transition-all flex justify-center items-center w-full h-full opacity-0 left-0 top-[-2px] ">
-                          <div className="border-[1px] border-cyan-600 rounded-full w-[10px] h-[10px]" />
+                          <div className="border-[1px] border-amber-600 rounded-full w-[10px] h-[10px]" />
                         </div>
                       </div>
                     )}

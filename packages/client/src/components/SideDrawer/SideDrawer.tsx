@@ -222,7 +222,7 @@ export default function ResponsiveDrawer(props: Props) {
   const drawer = (): React.ReactNode => {
     return (
       <>
-        <div className="text-[16px] bg-cyan-700 w-full min-h-[50px] text-white text-ellipsis overflow-hidden px-[20px] py-[15px]">
+        <div className="text-[16px] bg-amber-700 w-full min-h-[50px] text-white text-ellipsis overflow-hidden px-[20px] py-[15px]">
           {!titleEdit ? (
             <h3 className="flex justify-between items-center">
               {flowName}

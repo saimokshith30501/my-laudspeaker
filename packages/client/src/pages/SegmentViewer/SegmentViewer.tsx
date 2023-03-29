@@ -219,7 +219,7 @@ const SegmentViewer = () => {
                   <div className="mt-6 flex space-x-3 md:mt-0 md:ml-4">
                     <GenericButton
                       id="createTemplate"
-                      customClasses="inline-flex items-center border border-transparent bg-cyan-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md focus:ring-cyan-500"
+                      customClasses="inline-flex items-center border border-transparent bg-amber-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md focus:ring-amber-500"
                       onClick={handleSave}
                       loading={isSaving || loading}
                     >
@@ -231,7 +231,7 @@ const SegmentViewer = () => {
                 <div className="mt-6 flex space-x-3 md:mt-0 md:ml-4">
                   <GenericButton
                     id="createTemplate"
-                    customClasses="inline-flex items-center border border-transparent bg-cyan-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md focus:ring-cyan-500"
+                    customClasses="inline-flex items-center border border-transparent bg-amber-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md focus:ring-amber-500"
                     onClick={() => setAddCustomerModalOpen(true)}
                     loading={isSaving || loading}
                   >
@@ -269,7 +269,7 @@ const SegmentViewer = () => {
                     <label
                       htmlFor="dropzone-file"
                       className={`flex flex-col items-center justify-center w-full h-full border-2 ${
-                        isCSVDragActive ? "border-cyan-300" : "border-gray-300"
+                        isCSVDragActive ? "border-amber-300" : "border-gray-300"
                       } border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600`}
                     >
                       <div className="flex flex-col items-center justify-center pt-5 pb-6">
@@ -364,7 +364,7 @@ const SegmentViewer = () => {
                         htmlFor="dropzone-file"
                         className={`flex flex-col items-center justify-center w-full h-full border-2 ${
                           isCSVDragActive
-                            ? "border-cyan-300"
+                            ? "border-amber-300"
                             : "border-gray-300"
                         } border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600`}
                       >

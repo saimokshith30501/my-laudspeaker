@@ -235,7 +235,7 @@ export default function SettingsGeneralBeta() {
                   className={classNames(
                     errors.firstName.length > 0 && showErrors
                       ? "rounded-md sm:text-sm focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500 "
-                      : "rounded-md sm:text-sm focus:border-cyan-500 border-gray-300 shadow-sm focus:ring-cyan-500 "
+                      : "rounded-md sm:text-sm focus:border-amber-500 border-gray-300 shadow-sm focus:ring-amber-500 "
                   )}
                 />
                 {errors.firstName.length > 0 && showErrors && (
@@ -271,7 +271,7 @@ export default function SettingsGeneralBeta() {
                   className={classNames(
                     errors.lastName.length > 0 && showErrors
                       ? "rounded-md sm:text-sm focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500 "
-                      : "rounded-md sm:text-sm focus:border-cyan-500 border-gray-300 shadow-sm focus:ring-cyan-500 "
+                      : "rounded-md sm:text-sm focus:border-amber-500 border-gray-300 shadow-sm focus:ring-amber-500 "
                   )}
                 />
                 {showErrors && errors.lastName.length > 0 && (
@@ -332,7 +332,7 @@ export default function SettingsGeneralBeta() {
                     className={classNames(
                       errors.email.length > 0 && showErrors
                         ? "rounded-md sm:text-sm focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500 "
-                        : "rounded-md sm:text-sm focus:border-cyan-500 border-gray-300 shadow-sm focus:ring-cyan-500 ",
+                        : "rounded-md sm:text-sm focus:border-amber-500 border-gray-300 shadow-sm focus:ring-amber-500 ",
                       " disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500"
                     )}
                   />
@@ -372,7 +372,7 @@ export default function SettingsGeneralBeta() {
                     className={classNames(
                       errors.currentPassword.length > 0
                         ? "rounded-md sm:text-sm focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500 "
-                        : "rounded-md sm:text-sm focus:border-cyan-500 border-gray-300 shadow-sm focus:ring-cyan-500 "
+                        : "rounded-md sm:text-sm focus:border-amber-500 border-gray-300 shadow-sm focus:ring-amber-500 "
                     )}
                     aria-invalid="true"
                     aria-describedby="password-error"
@@ -412,7 +412,7 @@ export default function SettingsGeneralBeta() {
                     className={classNames(
                       errors.newPassword.length > 0
                         ? "rounded-md sm:text-sm focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500 "
-                        : "rounded-md sm:text-sm focus:border-cyan-500 border-gray-300 shadow-sm focus:ring-cyan-500 "
+                        : "rounded-md sm:text-sm focus:border-amber-500 border-gray-300 shadow-sm focus:ring-amber-500 "
                     )}
                     aria-invalid="true"
                     aria-describedby="password-error"
@@ -452,7 +452,7 @@ export default function SettingsGeneralBeta() {
                     className={classNames(
                       errors.verifyNewPassword.length > 0
                         ? "rounded-md sm:text-sm focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500 "
-                        : "rounded-md sm:text-sm focus:border-cyan-500 border-gray-300 shadow-sm focus:ring-cyan-500 "
+                        : "rounded-md sm:text-sm focus:border-amber-500 border-gray-300 shadow-sm focus:ring-amber-500 "
                     )}
                     aria-invalid="true"
                     aria-describedby="password-error"

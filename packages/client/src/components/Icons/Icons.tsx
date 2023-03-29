@@ -13,7 +13,7 @@ import {
 export const Home = () => {
   return (
     <HomeIcon
-      className="mr-4 h-6 w-6 flex-shrink-0 text-cyan-200"
+      className="mr-4 h-6 w-6 flex-shrink-0 text-amber-200"
       aria-hidden="true"
     />
   );
@@ -22,7 +22,7 @@ export const Home = () => {
 export const Messaging = () => {
   return (
     <EnvelopeIcon
-      className="mr-4 h-6 w-6 flex-shrink-0 text-cyan-200"
+      className="mr-4 h-6 w-6 flex-shrink-0 text-amber-200"
       aria-hidden="true"
     />
   );
@@ -31,7 +31,7 @@ export const Messaging = () => {
 export const Journeys = () => {
   return (
     <MegaphoneIcon
-      className="mr-4 h-6 w-6 flex-shrink-0 text-cyan-200"
+      className="mr-4 h-6 w-6 flex-shrink-0 text-amber-200"
       aria-hidden="true"
     />
   );
@@ -40,7 +40,7 @@ export const Journeys = () => {
 export const Campaigns = () => {
   return (
     <RectangleGroupIcon
-      className="mr-4 h-6 w-6 flex-shrink-0 text-cyan-200"
+      className="mr-4 h-6 w-6 flex-shrink-0 text-amber-200"
       aria-hidden="true"
     />
   );
@@ -49,7 +49,7 @@ export const Campaigns = () => {
 export const Segments = () => {
   return (
     <ChartPieIcon
-      className="mr-4 h-6 w-6 flex-shrink-0 text-cyan-200"
+      className="mr-4 h-6 w-6 flex-shrink-0 text-amber-200"
       aria-hidden="true"
     />
   );
@@ -58,7 +58,7 @@ export const Segments = () => {
 export const Users = () => {
   return (
     <UsersIcon
-      className="mr-4 h-6 w-6 flex-shrink-0 text-cyan-200"
+      className="mr-4 h-6 w-6 flex-shrink-0 text-amber-200"
       aria-hidden="true"
     />
   );
@@ -67,7 +67,7 @@ export const Users = () => {
 export const People = () => {
   return (
     <UserGroupIcon
-      className="mr-4 h-6 w-6 flex-shrink-0 text-cyan-200"
+      className="mr-4 h-6 w-6 flex-shrink-0 text-amber-200"
       aria-hidden="true"
     />
   );
@@ -76,7 +76,7 @@ export const People = () => {
 export const Integrations = () => {
   return (
     <CircleStackIcon
-      className="mr-4 h-6 w-6 flex-shrink-0 text-cyan-200"
+      className="mr-4 h-6 w-6 flex-shrink-0 text-amber-200"
       aria-hidden="true"
     />
   );
@@ -85,7 +85,7 @@ export const Integrations = () => {
 export const Settings = () => {
   return (
     <CogIcon
-      className="mr-4 h-6 w-6 flex-shrink-0 text-cyan-200"
+      className="mr-4 h-6 w-6 flex-shrink-0 text-amber-200"
       aria-hidden="true"
     />
   );

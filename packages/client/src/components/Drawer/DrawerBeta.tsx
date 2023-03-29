@@ -69,9 +69,9 @@ export default function ResponsiveDrawerBeta() {
     <>
       <div className="hidden lg:fixed lg:inset-y-0 lg:flex lg:w-64 lg:flex-col">
         {/* Sidebar component, swap this element with another sidebar if you like */}
-        <div className="flex flex-grow flex-col overflow-y-auto bg-cyan-700 pt-5 pb-4">
+        <div className="flex flex-grow flex-col overflow-y-auto bg-amber-700 pt-5 pb-4">
           <div className="flex flex-shrink-0 items-center px-4">
-            {/* src="https://tailwindui.com/img/logos/mark.svg?color=cyan&shade=300" */}
+            {/* src="https://tailwindui.com/img/logos/mark.svg?color=amber&shade=300" */}
             <img
               className="h-8 w-auto"
               src={LaudspeakerWhiteIcon}
@@ -79,7 +79,7 @@ export default function ResponsiveDrawerBeta() {
             />
           </div>
           <nav
-            className="mt-5 flex flex-1 flex-col divide-y divide-cyan-800 overflow-y-auto"
+            className="mt-5 flex flex-1 flex-col divide-y divide-amber-800 overflow-y-auto"
             aria-label="Sidebar"
           >
             <div className="space-y-1 px-2">
@@ -89,14 +89,14 @@ export default function ResponsiveDrawerBeta() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "bg-cyan-800 text-white"
-                      : "text-cyan-100 hover:text-white hover:bg-cyan-600",
+                      ? "bg-amber-800 text-white"
+                      : "text-amber-100 hover:text-white hover:bg-amber-600",
                     "group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >
                   <item.icon
-                    className="mr-4 h-6 w-6 flex-shrink-0 text-cyan-200"
+                    className="mr-4 h-6 w-6 flex-shrink-0 text-amber-200"
                     aria-hidden="true"
                   />
                   {item.name}
@@ -109,10 +109,10 @@ export default function ResponsiveDrawerBeta() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="group flex items-center rounded-md px-2 py-2 text-sm font-medium leading-6 text-cyan-100 hover:bg-cyan-600 hover:text-white"
+                    className="group flex items-center rounded-md px-2 py-2 text-sm font-medium leading-6 text-amber-100 hover:bg-amber-600 hover:text-white"
                   >
                     <item.icon
-                      className="mr-4 h-6 w-6 text-cyan-200"
+                      className="mr-4 h-6 w-6 text-amber-200"
                       aria-hidden="true"
                     />
                     {item.name}

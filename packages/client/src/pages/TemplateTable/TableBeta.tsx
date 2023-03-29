@@ -10,7 +10,7 @@
     theme: {
       extend: {
         colors: {
-          cyan: colors.cyan,
+          amber: colors.amber,
         },
       },
     },
@@ -123,7 +123,7 @@ export default function TableBeta() {
                 leaveFrom="translate-x-0"
                 leaveTo="-translate-x-full"
               >
-                <Dialog.Panel className="relative flex w-full max-w-xs flex-1 flex-col bg-cyan-700 pt-5 pb-4">
+                <Dialog.Panel className="relative flex w-full max-w-xs flex-1 flex-col bg-amber-700 pt-5 pb-4">
                   <Transition.Child
                     as={Fragment}
                     enter="ease-in-out duration-300"
@@ -150,12 +150,12 @@ export default function TableBeta() {
                   <div className="flex flex-shrink-0 items-center px-4">
                     <img
                       className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/mark.svg?color=cyan&shade=300"
+                      src="https://tailwindui.com/img/logos/mark.svg?color=amber&shade=300"
                       alt="Easywire logo"
                     />
                   </div>
                   <nav
-                    className="mt-5 h-full flex-shrink-0 divide-y divide-cyan-800 overflow-y-auto"
+                    className="mt-5 h-full flex-shrink-0 divide-y divide-amber-800 overflow-y-auto"
                     aria-label="Sidebar"
                   >
                     <div className="space-y-1 px-2">
@@ -165,14 +165,14 @@ export default function TableBeta() {
                           href={item.href}
                           className={classNames(
                             item.current
-                              ? "bg-cyan-800 text-white"
-                              : "text-cyan-100 hover:text-white hover:bg-cyan-600",
+                              ? "bg-amber-800 text-white"
+                              : "text-amber-100 hover:text-white hover:bg-amber-600",
                             "group flex items-center px-2 py-2 text-base font-medium rounded-md"
                           )}
                           aria-current={item.current ? "page" : undefined}
                         >
                           <item.icon
-                            className="mr-4 h-6 w-6 flex-shrink-0 text-cyan-200"
+                            className="mr-4 h-6 w-6 flex-shrink-0 text-amber-200"
                             aria-hidden="true"
                           />
                           {item.name}
@@ -185,10 +185,10 @@ export default function TableBeta() {
                           <a
                             key={item.name}
                             href={item.href}
-                            className="group flex items-center rounded-md px-2 py-2 text-base font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white"
+                            className="group flex items-center rounded-md px-2 py-2 text-base font-medium text-amber-100 hover:bg-amber-600 hover:text-white"
                           >
                             <item.icon
-                              className="mr-4 h-6 w-6 text-cyan-200"
+                              className="mr-4 h-6 w-6 text-amber-200"
                               aria-hidden="true"
                             />
                             {item.name}
@@ -209,16 +209,16 @@ export default function TableBeta() {
         {/* Static sidebar for desktop */}
         <div className="hidden lg:fixed lg:inset-y-0 lg:flex lg:w-64 lg:flex-col">
           {/* Sidebar component, swap this element with another sidebar if you like */}
-          <div className="flex flex-grow flex-col overflow-y-auto bg-cyan-700 pt-5 pb-4">
+          <div className="flex flex-grow flex-col overflow-y-auto bg-amber-700 pt-5 pb-4">
             <div className="flex flex-shrink-0 items-center px-4">
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=cyan&shade=300"
+                src="https://tailwindui.com/img/logos/mark.svg?color=amber&shade=300"
                 alt="Easywire logo"
               />
             </div>
             <nav
-              className="mt-5 flex flex-1 flex-col divide-y divide-cyan-800 overflow-y-auto"
+              className="mt-5 flex flex-1 flex-col divide-y divide-amber-800 overflow-y-auto"
               aria-label="Sidebar"
             >
               <div className="space-y-1 px-2">
@@ -228,14 +228,14 @@ export default function TableBeta() {
                     href={item.href}
                     className={classNames(
                       item.current
-                        ? "bg-cyan-800 text-white"
-                        : "text-cyan-100 hover:text-white hover:bg-cyan-600",
+                        ? "bg-amber-800 text-white"
+                        : "text-amber-100 hover:text-white hover:bg-amber-600",
                       "group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                     )}
                     aria-current={item.current ? "page" : undefined}
                   >
                     <item.icon
-                      className="mr-4 h-6 w-6 flex-shrink-0 text-cyan-200"
+                      className="mr-4 h-6 w-6 flex-shrink-0 text-amber-200"
                       aria-hidden="true"
                     />
                     {item.name}
@@ -248,10 +248,10 @@ export default function TableBeta() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="group flex items-center rounded-md px-2 py-2 text-sm font-medium leading-6 text-cyan-100 hover:bg-cyan-600 hover:text-white"
+                      className="group flex items-center rounded-md px-2 py-2 text-sm font-medium leading-6 text-amber-100 hover:bg-amber-600 hover:text-white"
                     >
                       <item.icon
-                        className="mr-4 h-6 w-6 text-cyan-200"
+                        className="mr-4 h-6 w-6 text-amber-200"
                         aria-hidden="true"
                       />
                       {item.name}
@@ -267,7 +267,7 @@ export default function TableBeta() {
           <div className="flex h-16 flex-shrink-0 border-b border-gray-200 bg-white lg:border-none">
             <button
               type="button"
-              className="border-r border-gray-200 px-4 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500 lg:hidden"
+              className="border-r border-gray-200 px-4 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500 lg:hidden"
               onClick={() => setSidebarOpen(true)}
             >
               <span className="sr-only">Open sidebar</span>
@@ -303,7 +303,7 @@ export default function TableBeta() {
               <div className="ml-4 flex items-center md:ml-6">
                 <button
                   type="button"
-                  className="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
+                  className="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
                 >
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
@@ -312,7 +312,7 @@ export default function TableBeta() {
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
                   <div>
-                    <Menu.Button className="flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 lg:rounded-md lg:p-2 lg:hover:bg-gray-50">
+                    <Menu.Button className="flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 lg:rounded-md lg:p-2 lg:hover:bg-gray-50">
                       <img
                         className="h-8 w-8 rounded-full"
                         src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -431,13 +431,13 @@ export default function TableBeta() {
                   <div className="mt-6 flex space-x-3 md:mt-0 md:ml-4">
                     <button
                       type="button"
-                      className="inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
+                      className="inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
                     >
                       Add money
                     </button>
                     <button
                       type="button"
-                      className="inline-flex items-center rounded-md border border-transparent bg-cyan-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
+                      className="inline-flex items-center rounded-md border border-transparent bg-amber-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
                     >
                       Send money
                     </button>
@@ -484,7 +484,7 @@ export default function TableBeta() {
                         <div className="text-sm">
                           <a
                             href={card.href}
-                            className="font-medium text-cyan-700 hover:text-cyan-900"
+                            className="font-medium text-amber-700 hover:text-amber-900"
                           >
                             View all
                           </a>

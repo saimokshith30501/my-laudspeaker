@@ -119,7 +119,7 @@ const TemplateTable = () => {
               <button
                 id="createTemplate"
                 type="button"
-                className="inline-flex items-center border border-transparent bg-cyan-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md focus:ring-cyan-500"
+                className="inline-flex items-center border border-transparent bg-amber-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-md focus:ring-amber-500"
                 onClick={redirectUses}
               >
                 Create Template

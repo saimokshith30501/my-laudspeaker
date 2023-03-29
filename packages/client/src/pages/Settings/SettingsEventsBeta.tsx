@@ -165,9 +165,9 @@ export default function SettingsEventsBeta() {
                       option.inStock
                         ? "cursor-pointer focus:outline-none"
                         : "opacity-25 cursor-not-allowed",
-                      active ? "ring-2 ring-offset-2 ring-cyan-500" : "",
+                      active ? "ring-2 ring-offset-2 ring-amber-500" : "",
                       checked
-                        ? "bg-cyan-600 border-transparent text-white hover:bg-cyan-700"
+                        ? "bg-amber-600 border-transparent text-white hover:bg-amber-700"
                         : "bg-white border-gray-200 text-gray-900 hover:bg-gray-50",
                       "border rounded-md py-3 px-3 flex items-center justify-center text-sm font-medium sm:flex-1"
                     )
@@ -198,7 +198,7 @@ export default function SettingsEventsBeta() {
                       showErrors.posthogApiKey &&
                         errors.posthogApiKey.length > 0
                         ? "rounded-md sm:text-sm focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500 "
-                        : "rounded-md sm:text-sm focus:border-cyan-500 border-gray-300 shadow-sm focus:ring-cyan-500 "
+                        : "rounded-md sm:text-sm focus:border-amber-500 border-gray-300 shadow-sm focus:ring-amber-500 "
                     )}
                     aria-invalid="true"
                     aria-describedby="password-error"
@@ -241,7 +241,7 @@ export default function SettingsEventsBeta() {
                       showErrors.posthogProjectId &&
                         errors.posthogProjectId.length > 0
                         ? "rounded-md sm:text-sm focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500 "
-                        : "rounded-md sm:text-sm focus:border-cyan-500 border-gray-300 shadow-sm focus:ring-cyan-500 "
+                        : "rounded-md sm:text-sm focus:border-amber-500 border-gray-300 shadow-sm focus:ring-amber-500 "
                     )}
                     placeholder="1"
                     onBlur={handleBlur}
@@ -285,7 +285,7 @@ export default function SettingsEventsBeta() {
                       showErrors.posthogHostUrl &&
                         errors.posthogHostUrl.length > 0
                         ? "rounded-md sm:text-sm focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500 "
-                        : "rounded-md sm:text-sm focus:border-cyan-500 border-gray-300 shadow-sm focus:ring-cyan-500 ",
+                        : "rounded-md sm:text-sm focus:border-amber-500 border-gray-300 shadow-sm focus:ring-amber-500 ",
                       "!m-0"
                     )}
                     onBlur={handleBlur}
@@ -321,7 +321,7 @@ export default function SettingsEventsBeta() {
                 })
               }
               disabled={isError || isLoading}
-              customClasses={`inline-flex mb-[10px] items-center rounded-md border border-transparent bg-cyan-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 ${
+              customClasses={`inline-flex mb-[10px] items-center rounded-md border border-transparent bg-amber-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 ${
                 isError ? "grayscale" : ""
               }`}
               loading={isLoading}
@@ -339,7 +339,7 @@ export default function SettingsEventsBeta() {
                   onChange={handleFormDataChange}
                   name="posthogSmsKey"
                   id="posthogSmsKey"
-                  className="rounded-md border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm"
+                  className="rounded-md border-gray-300 shadow-sm focus:border-amber-500 focus:ring-amber-500 sm:text-sm"
                   placeholder="$phoneNumber"
                 />
               </dd>
@@ -355,7 +355,7 @@ export default function SettingsEventsBeta() {
                   onChange={handleFormDataChange}
                   name="posthogEmailKey"
                   id="posthogEmailKey"
-                  className="rounded-md border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm"
+                  className="rounded-md border-gray-300 shadow-sm focus:border-amber-500 focus:ring-amber-500 sm:text-sm"
                   placeholder="$email"
                 />
               </dd>
@@ -372,7 +372,7 @@ export default function SettingsEventsBeta() {
                   onChange={handleFormDataChange}
                   name="posthogFirebaseDeviceTokenKey"
                   id="posthogFirebaseDeviceTokenKey"
-                  className="rounded-md border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm"
+                  className="rounded-md border-gray-300 shadow-sm focus:border-amber-500 focus:ring-amber-500 sm:text-sm"
                   placeholder="deviceToken"
                 />
               </dd>

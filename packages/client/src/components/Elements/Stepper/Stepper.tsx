@@ -15,7 +15,7 @@ const Stepper: FC<StepperProps> = ({ activeStep, onChange, steps }) => {
           <div
             className={`relative w-full ${
               index === activeStep
-                ? "border-cyan-500 text-cyan-600"
+                ? "border-amber-500 text-amber-600"
                 : "text-gray-500 hover:text-gray-700"
             }`}
           >
@@ -28,7 +28,7 @@ const Stepper: FC<StepperProps> = ({ activeStep, onChange, steps }) => {
               ) : (
                 <span
                   className={`w-[30px] h-[30px] ${
-                    index === activeStep ? "bg-cyan-500" : "bg-gray-400"
+                    index === activeStep ? "bg-amber-500" : "bg-gray-400"
                   } rounded-full text-white border-[1px] flex justify-center items-center`}
                 >
                   {index + 1}
@@ -39,7 +39,7 @@ const Stepper: FC<StepperProps> = ({ activeStep, onChange, steps }) => {
             <div
               className={`absolute w-full hidden lg:block ${
                 index === activeStep
-                  ? "bg-cyan-500 h-[3px]"
+                  ? "bg-amber-500 h-[3px]"
                   : "bg-gray-400 h-[2px]"
               } bottom-[-5px]`}
             ></div>

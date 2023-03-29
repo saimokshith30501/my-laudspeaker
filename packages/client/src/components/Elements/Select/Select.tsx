@@ -84,7 +84,7 @@ const Select = <T extends string | number | undefined>(
           name={name}
         >
           <Listbox.Button
-            className={`${customButtonClass} relative min-h-[30px] cursor-pointer w-full rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-cyan-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-cyan-300 sm:text-sm`}
+            className={`${customButtonClass} relative min-h-[30px] cursor-pointer w-full rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-amber-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-amber-300 sm:text-sm`}
           >
             <>
               {(renderValue && renderValue(value)) ||
@@ -116,7 +116,9 @@ const Select = <T extends string | number | undefined>(
                       option.disabled
                         ? "cursor-default bg-gray-300"
                         : "cursor-pointer"
-                    } ${active ? "bg-cyan-100 text-cyan-400" : "text-gray-900"}`
+                    } ${
+                      active ? "bg-amber-100 text-amber-400" : "text-gray-900"
+                    }`
                   }
                   disabled={option.disabled || false}
                   data-option={option.value}

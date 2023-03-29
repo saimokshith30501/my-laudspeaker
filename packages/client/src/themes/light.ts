@@ -222,7 +222,7 @@ export const lightTheme: ThemeOptions = {
         },
       },
     },
-    MuiCircularProgress: { styleOverrides: { circle: { color: "cyan" } } },
+    MuiCircularProgress: { styleOverrides: { circle: { color: "amber" } } },
   },
   typography: {
     fontFamily: "'Poppins', sans-serif",

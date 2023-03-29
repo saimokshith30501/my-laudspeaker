@@ -132,7 +132,7 @@ const SegmentCustomerPicker: FC<SegmentCustomerPickerProps> = ({
           renderItem={(item, isHighlighted) => (
             <div
               className={`${
-                isHighlighted ? "bg-cyan-100" : ""
+                isHighlighted ? "bg-amber-100" : ""
               } p-[2px] rounded-[6px] relative max-w-full break-all`}
             >
               {item.key} ({item.type})
@@ -142,7 +142,7 @@ const SegmentCustomerPicker: FC<SegmentCustomerPickerProps> = ({
             if (!items.length) return <></>;
 
             return (
-              <div className="max-h-[200px] overflow-y-scroll shadow-md  border-[1px] bg-white border-cyan-500 absolute top-[calc(100%+4px)] w-full rounded-[6px] z-[9999999999]">
+              <div className="max-h-[200px] overflow-y-scroll shadow-md  border-[1px] bg-white border-amber-500 absolute top-[calc(100%+4px)] w-full rounded-[6px] z-[9999999999]">
                 {items}
               </div>
             );

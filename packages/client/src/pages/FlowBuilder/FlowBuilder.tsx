@@ -1229,7 +1229,7 @@ const Flow = () => {
               >
                 <div className="m-[0_7.5px]" data-saveflowbutton>
                   <button
-                    className="inline-flex items-center rounded-md border border-transparent bg-cyan-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+                    className="inline-flex items-center rounded-md border border-transparent bg-amber-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500"
                     onClick={handleTutorialOpen}
                     style={{
                       maxWidth: "158px",
@@ -1243,7 +1243,7 @@ const Flow = () => {
 
                 <div className="m-[0_7.5px]" data-saveflowbutton>
                   <GenericButton
-                    customClasses="inline-flex items-center rounded-md border border-transparent bg-cyan-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+                    customClasses="inline-flex items-center rounded-md border border-transparent bg-amber-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500"
                     onClick={handleSaveJourney}
                     style={{
                       maxWidth: "158px",
@@ -1266,7 +1266,7 @@ const Flow = () => {
                       placement="bottom"
                     >
                       <GenericButton
-                        customClasses={`inline-flex items-center rounded-md border border-transparent bg-cyan-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 ${
+                        customClasses={`inline-flex items-center rounded-md border border-transparent bg-amber-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 ${
                           !!startDisabledReason ? "grayscale" : ""
                         }`}
                         onClick={handleStartJourney}
@@ -1291,7 +1291,7 @@ const Flow = () => {
                       placement="bottom"
                     >
                       <GenericButton
-                        customClasses={`inline-flex items-center rounded-md border border-transparent bg-cyan-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 ${
+                        customClasses={`inline-flex items-center rounded-md border border-transparent bg-amber-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 ${
                           stepsCompletion[currentStep] ? "" : "grayscale"
                         }`}
                         onClick={handleNextStep}
@@ -1380,7 +1380,7 @@ const Flow = () => {
                   placement="bottom"
                 >
                   <GenericButton
-                    customClasses={`inline-flex items-center rounded-md border border-transparent bg-cyan-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 ${
+                    customClasses={`inline-flex items-center rounded-md border border-transparent bg-amber-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 ${
                       stepsCompletion[currentStep] ? "" : "grayscale"
                     }`}
                     onClick={handleNextStep}
@@ -1440,7 +1440,7 @@ const Flow = () => {
 
             <div className="m-[10px_0] flex justify-end" data-saveflowbutton>
               <GenericButton
-                customClasses="inline-flex items-center rounded-md border border-transparent bg-cyan-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+                customClasses="inline-flex items-center rounded-md border border-transparent bg-amber-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-amber-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500"
                 onClick={handleSaveJourney}
                 style={{
                   maxWidth: "158px",

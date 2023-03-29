@@ -170,7 +170,7 @@ export default function SettingsFirebaseBeta() {
                       showErrors.firebaseCredentials &&
                       firebaseErrors.firebaseCredentials.length > 0
                         ? "focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500"
-                        : "border-gray-300 focus:border-cyan-500 focus:ring-cyan-500"
+                        : "border-gray-300 focus:border-amber-500 focus:ring-amber-500"
                     }`}
                     onBlur={handleBlur}
                   />

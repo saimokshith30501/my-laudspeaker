@@ -279,7 +279,7 @@ export default function SettingsEmailBeta() {
                   mailgunErrors.mailgunAPIKey.length > 0 &&
                     showErrors.mailgunAPIKey
                     ? "rounded-md sm:text-sm focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500 "
-                    : "rounded-md sm:text-sm focus:border-cyan-500 border-gray-300 shadow-sm focus:ring-cyan-500 "
+                    : "rounded-md sm:text-sm focus:border-amber-500 border-gray-300 shadow-sm focus:ring-amber-500 "
                 )}
                 aria-invalid="true"
                 aria-describedby="password-error"
@@ -323,7 +323,7 @@ export default function SettingsEmailBeta() {
                   mailgunErrors.sendingDomain.length > 0 &&
                   showErrors.sendingDomain
                     ? "focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500"
-                    : "border-gray-300 focus:border-cyan-500 focus:ring-cyan-500"
+                    : "border-gray-300 focus:border-amber-500 focus:ring-amber-500"
                 }`}
                 onBlur={handleBlur}
               >
@@ -369,7 +369,7 @@ export default function SettingsEmailBeta() {
                 className={`rounded-md shadow-sm sm:text-sm ${
                   showErrors.sendingName && mailgunErrors.sendingName.length > 0
                     ? "focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500"
-                    : "border-gray-300 focus:border-cyan-500 focus:ring-cyan-500"
+                    : "border-gray-300 focus:border-amber-500 focus:ring-amber-500"
                 }`}
                 placeholder="Team Laudspeaker"
                 onBlur={handleBlur}
@@ -409,7 +409,7 @@ export default function SettingsEmailBeta() {
                   showErrors.sendingEmail &&
                   mailgunErrors.sendingEmail.length > 0
                     ? "focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500"
-                    : "border-gray-300 focus:border-cyan-500 focus:ring-cyan-500"
+                    : "border-gray-300 focus:border-amber-500 focus:ring-amber-500"
                 }`}
                 placeholder="noreply"
                 onBlur={handleBlur}
@@ -464,7 +464,7 @@ export default function SettingsEmailBeta() {
                   showErrors.testSendingName &&
                   free3Errors.testSendingName.length > 0
                     ? "focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500"
-                    : "border-gray-300 focus:border-cyan-500 focus:ring-cyan-500"
+                    : "border-gray-300 focus:border-amber-500 focus:ring-amber-500"
                 }`}
                 placeholder="Team Laudspeaker"
                 onBlur={handleBlur}
@@ -506,7 +506,7 @@ export default function SettingsEmailBeta() {
                   showErrors.testSendingEmail &&
                   free3Errors.testSendingEmail.length > 0
                     ? "focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500"
-                    : "border-gray-300 focus:border-cyan-500 focus:ring-cyan-500"
+                    : "border-gray-300 focus:border-amber-500 focus:ring-amber-500"
                 }`}
                 placeholder="noreply"
                 onBlur={handleBlur}
@@ -559,7 +559,7 @@ export default function SettingsEmailBeta() {
                   showErrors.sendgridApiKey &&
                   sendgridErrors.sendgridApiKey.length > 0
                     ? "focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500"
-                    : "border-gray-300 focus:border-cyan-500 focus:ring-cyan-500"
+                    : "border-gray-300 focus:border-amber-500 focus:ring-amber-500"
                 }`}
                 placeholder="****"
                 onBlur={handleBlur}
@@ -600,7 +600,7 @@ export default function SettingsEmailBeta() {
                   showErrors.sendgridFromEmail &&
                   sendgridErrors.sendgridFromEmail.length > 0
                     ? "focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500"
-                    : "border-gray-300 focus:border-cyan-500 focus:ring-cyan-500"
+                    : "border-gray-300 focus:border-amber-500 focus:ring-amber-500"
                 }`}
                 placeholder="your.email@sendgrid.com"
                 onBlur={handleBlur}
@@ -662,9 +662,9 @@ export default function SettingsEmailBeta() {
                       option.inStock
                         ? "cursor-pointer focus:outline-none"
                         : "opacity-25 cursor-not-allowed",
-                      active ? "ring-2 ring-offset-2 ring-cyan-500" : "",
+                      active ? "ring-2 ring-offset-2 ring-amber-500" : "",
                       checked
-                        ? "bg-cyan-600 border-transparent text-white hover:bg-cyan-700"
+                        ? "bg-amber-600 border-transparent text-white hover:bg-amber-700"
                         : "bg-white border-gray-200 text-gray-900 hover:bg-gray-50",
                       "border rounded-md py-3 px-3 flex items-center justify-center text-sm font-medium sm:flex-1"
                     )

@@ -8,7 +8,7 @@ export default (
   authToken: string = TESTS_SMS_AUTH_TOKEN,
   from: string = TESTS_SMS_FROM
 ) => {
-  cy.get('[data-disclosure-link="Settings"] > .bg-cyan-700').click();
+  cy.get('[data-disclosure-link="Settings"] > .bg-amber-700').click();
   cy.get(".-mb-px > :nth-child(3)").click();
   cy.wait(1000);
   cy.get(".-mb-px > :nth-child(4)").click();

@@ -136,9 +136,9 @@ const DatabaseStep3: FC<DatabaseStepProps> = ({
                     option.inStock
                       ? "cursor-pointer focus:outline-none"
                       : "opacity-25 cursor-not-allowed",
-                    active ? "ring-2 ring-offset-2 ring-cyan-500" : "",
+                    active ? "ring-2 ring-offset-2 ring-amber-500" : "",
                     checked
-                      ? "bg-cyan-600 border-transparent text-white hover:bg-cyan-700"
+                      ? "bg-amber-600 border-transparent text-white hover:bg-amber-700"
                       : "bg-white border-gray-200 text-gray-900 hover:bg-gray-50",
                     "border rounded-md py-3 px-3 flex items-center justify-center text-sm font-medium sm:flex-1"
                   )
@@ -173,7 +173,7 @@ const DatabaseStep3: FC<DatabaseStepProps> = ({
                     errors.databricksData.length > 0 &&
                       showErrors.databricksData
                       ? "rounded-md sm:text-sm focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500 "
-                      : "rounded-md sm:text-sm focus:border-cyan-500 border-gray-300 shadow-sm focus:ring-cyan-500 "
+                      : "rounded-md sm:text-sm focus:border-amber-500 border-gray-300 shadow-sm focus:ring-amber-500 "
                   )}
                   name="host"
                   id="host"
@@ -208,7 +208,7 @@ const DatabaseStep3: FC<DatabaseStepProps> = ({
                     errors.databricksData.length > 0 &&
                       showErrors.databricksData
                       ? "rounded-md sm:text-sm focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500 "
-                      : "rounded-md sm:text-sm focus:border-cyan-500 border-gray-300 shadow-sm focus:ring-cyan-500 "
+                      : "rounded-md sm:text-sm focus:border-amber-500 border-gray-300 shadow-sm focus:ring-amber-500 "
                   )}
                   name="httpPath"
                   id="httpPath"
@@ -245,7 +245,7 @@ const DatabaseStep3: FC<DatabaseStepProps> = ({
                     errors.databricksData.length > 0 &&
                       showErrors.databricksData
                       ? "rounded-md sm:text-sm focus:!border-red-500 !border-red-300 shadow-sm focus:!ring-red-500 "
-                      : "rounded-md sm:text-sm focus:border-cyan-500 border-gray-300 shadow-sm focus:ring-cyan-500 "
+                      : "rounded-md sm:text-sm focus:border-amber-500 border-gray-300 shadow-sm focus:ring-amber-500 "
                   )}
                   id="token"
                   name="token"

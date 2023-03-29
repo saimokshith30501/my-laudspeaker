@@ -18,7 +18,7 @@ describe(
     it("passes", () => {
       loginFunc(email, password);
 
-      cy.get('[data-disclosure-link="Settings"] > .bg-cyan-700').click();
+      cy.get('[data-disclosure-link="Settings"] > .bg-amber-700').click();
       cy.contains("Waiting for verification: Resend").should("exist");
       cy.get(".text-black").click();
       cy.contains("We have sent you new email").should("exist");
